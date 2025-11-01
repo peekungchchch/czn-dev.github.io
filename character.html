@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตัวละคร - CZN Wiki</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+    }
+
+    /* แถบหัว */
+    header {
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      border-bottom: 2px solid #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: #28e6ff;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* โครงร่างปุ่ม (การ์ดตัวละคร) */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding-bottom: 60px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      border: 2px solid #333;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #5edaff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- แถบหัว -->
+  <header>
+    <div class="logo" onclick="location.href='index.html'">CZN Wiki</div>
+    <nav>
+      <a href="characters.html">ตัวละคร</a>
+      <a href="#">มอนส์เตอร์</a>
+      <a href="#">ศัพท์เฉพาะ</a>
+      <a href="#">การ์ดทั่วไป</a>
+    </nav>
+  </header>
+
+  <!-- การ์ดตัวละคร -->
+  <div class="container">
+    <!-- ตัวอย่าง 24 การ์ด -->
+    <div class="card">
+      <img src="khalipe.png" alt="khalipe">
+      <div class="card-title">khalipe</div>
+    </div>
+
+    <div class="card">
+      <img src="haru.png" alt="haru">
+      <div class="card-title">haru</div>
+    </div>
+
+    <div class="card">
+      <img src="hugo.png" alt="hugo">
+      <div class="card-title">hugo</div>
+    </div>
+
+    <div class="card">
+      <img src="magna.png" alt="magna">
+      <div class="card-title">magna</div>
+    </div>
+
+    <div class="card">
+      <img src="orlea.png" alt="orlea">
+      <div class="card-title">orlea</div>
+    </div>
+
+    <div class="card">
+      <img src="kayron.png" alt="kayron">
+      <div class="card-title">kayron</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 7">
+      <div class="card-title">ตัวละคร 7</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 8">
+      <div class="card-title">ตัวละคร 8</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 9">
+      <div class="card-title">ตัวละคร 9</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 10">
+      <div class="card-title">ตัวละคร 10</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 11">
+      <div class="card-title">ตัวละคร 11</div>
+    </div>
+
+    <div class="card">
+      <img src="mika.png" alt="mika">
+      <div class="card-title">mika</div>
+    </div>
+
+    <div class="card">
+      <img src="selena.png" alt="selena">
+      <div class="card-title">selena</div>
+    </div>
+
+    <div class="card">
+      <img src="tressa.png" alt="tressa">
+      <div class="card-title">tressa</div>
+    </div>
+
+    <div class="card">
+      <img src="amir.png" alt="amir">
+      <div class="card-title">amir</div>
+    </div>
+
+    <div class="card">
+      <img src="lucas.png" alt="lucas">
+      <div class="card-title">lucas</div>
+    </div>
+
+    <div class="card">
+      <img src="beryl.png" alt="beryl">
+      <div class="card-title">beryl</div>
+    </div>
+
+    <div class="card">
+      <img src="cassius.png" alt="cassius">
+      <div class="card-title">cassius</div>
+    </div>
+
+    <div class="card">
+      <img src="owen.png" alt="owen">
+      <div class="card-title">owen</div>
+    </div>
+
+    <div class="card">
+      <img src="rei.png" alt="rei">
+      <div class="card-title">rei</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 21">
+      <div class="card-title">ตัวละคร 21</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 22">
+      <div class="card-title">ตัวละคร 22</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 23">
+      <div class="card-title">ตัวละคร 23</div>
+    </div>
+
+    <div class="card">
+      <img src="cha.png" alt="character 24">
+      <div class="card-title">ตัวละคร 24</div>
+    </div>
+  </div>
+
+</body>
+</html>

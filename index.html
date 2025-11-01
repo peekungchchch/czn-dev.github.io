@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CZN Wiki</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      border-bottom: 2px solid #ffffff;
+      cursor: pointer;
+    }
+
+    .logo {
+      color: #28e6ff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      border: 2px solid #333;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #5edaff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+
+    /* COMING SOON */
+    /* COMING SOON */
+.coming {
+  position: relative;
+  pointer-events: none;
+  background: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.coming img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.coming::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.coming::after {
+  content: "COMING SOON";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #4cfff3;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+
+    /* Feedback Button */
+    .feedback-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #28e6ff;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px #28e6ff;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+
+    .feedback-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #4cfff3;
+    }
+
+    .feedback-box {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #28e6ff;
+      width: 300px;
+      z-index: 999;
+    }
+
+    .feedback-box textarea {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: none;
+      padding: 10px;
+      resize: none;
+      background: #111;
+      color: white;
+    }
+
+    .feedback-box button {
+      width: 100%;
+      background-color: #28e6ff;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header onclick="location.href='index.html'">
+    <div class="logo">CZN Wiki</div>
+    <nav>
+      <a href="character.html">ตัวละคร</a>
+      <a href="#">มอนส์เตอร์</a>
+      <a href="#">ศัพท์เฉพาะ</a>
+      <a href="#">การ์ดทั่วไป</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card" onclick="location.href='character.html'">
+      <img src="cha.png" alt="tierlists">
+      <div class="card-title">ตัวละคร</div>
+    </div>
+
+    <div class="card">
+      <img src="monster.png" alt="guides">
+      <div class="card-title">มอนส์เตอร์</div>
+    </div>
+
+    <div class="card">
+      <img src="word.png" alt="meta read">
+      <div class="card-title">ศัพท์เฉพาะ</div>
+    </div>
+
+    <div class="card">
+      <img src="card.png" alt="study hall">
+      <div class="card-title">การ์ดทั่วไป</div>
+    </div>
+
+    <div class="card coming">
+      <img src="ขาว.jpeg" alt="coming soon 1">
+    </div>
+
+    <div class="card coming">
+      <img src="ขาว.jpeg" alt="coming soon 2">
+    </div>
+  </div>
+
+  <button class="feedback-btn" onclick="toggleFeedback()">✉️</button>
+
+  <div class="feedback-box" id="feedbackBox">
+    <form action="https://formspree.io/f/xrboyvzz" method="POST">
+      <textarea name="message" placeholder="ส่งคำติชมของคุณ..."></textarea>
+      <button type="submit">ส่ง</button>
+    </form>
+  </div>
+
+  <script>
+    function toggleFeedback() {
+      const box = document.getElementById('feedbackBox');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
